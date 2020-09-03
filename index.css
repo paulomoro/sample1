@@ -1,0 +1,17 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.showcase{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+.showcase img{
+    position: absolute;
+    top: 20%;
+    left: 33%;
+}
