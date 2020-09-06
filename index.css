@@ -2,16 +2,45 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    
+}
+body{
+    background-color: black;
 }
 
 .showcase{
     background-color: black;
-    width: 100vw;
-    height: 100vh;
+    width: 320px;
+    height: 200px;
+    position: relative;
+    left: 400px;
+    top: 50px;
+    overflow: hidden;
 }
 
-.showcase img{
+.showcase::before{
+    content: url(./images/Group\ 3.svg);
+    animation: spin 100s linear infinite;
     position: absolute;
-    top: 20%;
-    left: 33%;
+    top: 30px;
+    left: -55px;
 }
+
+/* .showcase img{
+    animation: spin 100s linear infinite;
+    margin-left: -50px;
+    margin-top: 30px;
+    position: absolute;
+} */
+
+
+
+@keyframes spin {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
